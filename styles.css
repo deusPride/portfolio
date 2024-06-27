@@ -14,14 +14,34 @@ section {
     box-sizing: border-box;
 }
 
+.w-50 {
+    width: 50%;
+}
+
 section>h1 {
     color: #4c12aa;
-    border: 2px solid rgb(1, 231, 39);
     text-align: center;
     text-transform: uppercase;
 }
 
-#skills {}
+#skills {
+    width: 90%;
+    font-size: 22px;
+
+}
+
+#skills p {
+    padding: 5px;
+}
+
+#projects {
+    color: antiquewhite !important;
+    background-color: #26222e !important;
+}
+
+#projects>h1 {
+    color: antiquewhite;
+}
 
 header {
     background-color: #26222e;
@@ -44,7 +64,6 @@ header nav ul li {
 }
 
 section {
-    border: 1px solid red;
     padding: 1em;
 }
 
