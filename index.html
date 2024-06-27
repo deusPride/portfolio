@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#sports">Activités sportives</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="d-flex bg-purple j-c-sb">
+            <div class="presentation ">
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p>Je suis <span class="scale-1">Serval TOUKAP NONO</span>, développeur web passionné. <br>
+                    Découvrez mes compétences, projets, et
+                    intérêts.
+                </p>
+            </div>
+
+            <img class="profile-picture" src="profile.jpg" alt="Photo de profil">
+
+        </section>
+        <section class="social-logos d-flex j-c-sb mx-auto">
+            <a href="https://www.linkedin.com/in/serval-toukap-nono-516b6a176/" target="_blank">
+                <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+                    alt="LinkedIn" width="50" height="50">
+            </a>
+
+            <a href="https://github.com/deusPride" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
+                    width="50" height="50">
+            </a>
+
+            <a href="https://www.instagram.com/blenderkido237" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+                    width="50" height="50">
+            </a>
+
+            <a href="https://www.twitter.com/servalnono" target="_blank">
+                <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" width="50"
+                    height="50">
+            </a>
+
+        </section>
+    </main>
+    <section id="about" class=" mx-auto">
+        <h1> A Propos</h1>
+        <p>
+            Je suis un ingénieur logiciel passionné et développeur web freelance. Spécialisé dans la création de sites
+            web et de
+            thèmes WordPress, j'allie expertise technique, design graphique, analyse de données et art 3D pour créer des
+            expériences
+            utilisateur exceptionnelles. Toujours ouvert à de nouvelles collaborations, je suis prêt à relever votre
+            prochain défi.
+            Parlons-en !
+        </p>
+    </section>
+    <section id="skills" class="mx-auto">
+        <h1> Mes compétences</h1>
+        <div class="d-flex">
+            <p>
+                Je suis un ingénieur logiciel passionné et développeur web freelance. Spécialisé dans la création de
+                sites
+                web et de
+                thèmes WordPress, j'allie expertise technique, design graphique, analyse de données et art 3D pour créer
+                des
+                expériences
+                utilisateur exceptionnelles. Toujours ouvert à de nouvelles collaborations, je suis prêt à relever votre
+                prochain défi.
+                Parlons-en !
+            </p>
+            <p>
+
+            </p>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Serval TOUKAP NONO. Tous droits réservés.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
