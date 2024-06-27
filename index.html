@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Accueil</title>
+    <link rel="shortcut icon"
+        href="https://i0.wp.com/www.nonoverse.cm/wp-content/uploads/2023/07/Logo-D1.png?fit=1244%2C974"
+        type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="d-flex">
+        <a href="index.html"> <img class="site-logo"
+                src="https://i0.wp.com/www.nonoverse.cm/wp-content/uploads/2023/07/Logo-D1.png?fit=1244%2C974"
+                alt=""></a>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -57,8 +63,9 @@
             </a>
 
         </section>
+        <hr class="mx-auto w-50">
     </main>
-    <section id="about" class=" mx-auto">
+    <section id="about" class="text-justify mx-auto">
         <h1> A Propos</h1>
         <p>
             Je suis un ingénieur logiciel passionné et développeur web freelance. Spécialisé dans la création de sites
@@ -73,7 +80,7 @@
     <section id="skills" class="mx-auto">
         <h1> Mes compétences</h1>
         <div class="d-flex">
-            <p class="w-50">
+            <p class="w-50 text-justify">
                 Je suis un ingénieur logiciel et développeur web freelance. Spécialisé en création de sites web et
                 thèmes WordPress, je
                 maîtrise JavaScript, Python et PHP. Avec des compétences en design graphique, analyse de données
@@ -93,7 +100,7 @@
 
         </div>
         <section>
-            <img class="mx-auto"
+            <img class="mx-auto w-100"
                 src="https://skillicons.dev/icons?i=py,js,php,html,css,jquery,vue,react,wordpress,blender,git,github,vercel,sass,vscode,nodejs&perline=16"
                 alt="">
         </section>
@@ -101,26 +108,52 @@
 
     <section id="projects" class=" mx-auto">
         <h1> Projets</h1>
-        <ul>
-            <li>Site WordPress pour <a href="https://f2mservices.com/">F2M Service</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="d-flex">
+            <div class="w-50">
+                <ul>
+                    <li><a id="f2m" href="https://f2mservices.com/" target="_blank">Site WordPress pour F2M Service</a>
+                    </li>
+                    <li><a id="dig" href="https://digicoleo.com/" target="_blank">Site WordPress pour Digicoleo</a></li>
+                    <li> <a id="gal" href="http://nonoverse.cm/stargate/galerie/galerie.html" target="_blank">Galerie
+                            virtuelle
+                            en 3D </a></li>
+                    <li><a id="cha" href="https://github.com/deusPride/chatbot" target="_blank">Widget pour l'ajout d'un
+                            chat via
+                            cdn</a></li>
+                    <li><a id="rep" href="https://github.com/deusPride/" target="_blank">Voir plus sur github</a></li>
+                </ul>
+            </div>
+            <div class="w-50 border">
+                <img id="preview" src="img/Logo.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="hobbies" class="text-justify mx-auto j-c-sb">
+        <h1> Hobbies </h1>
+        <p>
+        <ul class="d-flex">
+            <li>Compétitions et Hackathon</li>
+            <li>Jeux vidéos</li>
+            <li>Mangas et animes</li>
+            <li> Lecture</li>
         </ul>
+        </p>
+    </section>
+    <section id="sports" class="text-justify mx-auto j-c-sb">
+        <h1> Hobbies </h1>
+        <p>
+        <ul class="d-flex">
+            <li>Compétitions et Hackathon</li>
+            <li>Jeux vidéos</li>
+            <li>Mangas et animes</li>
+            <li> Lecture</li>
+        </ul>
+        </p>
     </section>
     <footer>
         <p>&copy; 2024 Serval TOUKAP NONO. Tous droits réservés.</p>
     </footer>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    <script src="script.js">
     </script>
 </body>
 
