@@ -73,16 +73,27 @@ section>h1 {
     object-fit: contain;
 }
 
-#hobbies {
+#sports {
+    background-color: #3e158a;
+    color: antiquewhite !important;
+}
+
+#sports>h1 {
+    color: antiquewhite !important;
+}
+
+#hobbies,
+#sports,
+#contact {
     gap: 20px;
     font: optional;
     font-size: 30px;
 
 }
 
-#sports {}
 
-#hobbies li {
+#hobbies li,
+#sports li {
     margin: 20px;
 }
 
